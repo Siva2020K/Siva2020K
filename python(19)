@@ -1,0 +1,11 @@
+#You are given three integers:'a','b' ,'m' and . Print two lines.
+On the first line, print the result of pow(a,b). On the second line, print the result of pow(a,b,m).
+
+
+
+
+
+
+
+a,b,m = [int(input()) for _ in '123']
+print(pow(a,b),pow(a,b,m),sep='\n')
