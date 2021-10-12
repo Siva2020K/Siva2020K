@@ -1,0 +1,16 @@
+#Task
+#You are given a 2-D array with dimensions NXM.
+#Your task is to perform the min function over axis 1 and then find the max of that.
+
+
+
+
+
+
+
+
+import numpy
+n,m=map(int,input().split())
+lista=[list(map(int,input().split())) for i in range(n)]
+ar=numpy.array(lista)
+print(max(numpy.min(ar,axis=1)))
