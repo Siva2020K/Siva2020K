@@ -1,0 +1,15 @@
+#Task
+#You are given two arrays: A and B .
+#Your task is to compute their inner and outer product.
+
+
+
+
+
+
+
+
+import numpy as np
+A = np.array(input().split(), int)
+B = np.array(input().split(), int)
+print(np.inner(A,B), np.outer(A,B), sep='\n')
