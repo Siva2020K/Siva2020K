@@ -1,0 +1,16 @@
+#Task
+#Check whether the given number is a valid phone number(it starts from 7,8,9 and contains 10 digits) or not.
+
+
+
+
+
+
+
+
+import re
+for _ in range(int(input())):
+    if re.match(r'[789]\d{9}$',input()):   
+        print('YES')  
+    else:  
+        print('NO')
