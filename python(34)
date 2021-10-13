@@ -1,0 +1,17 @@
+#Task
+#You are given a 2-D array of size NXM.
+#Your task is to find:
+#The mean along axis '0'
+#The var along axis '1'
+#The std along axis 'None' 
+
+
+
+
+
+
+
+
+import numpy as np
+a1 = np.array([list(input().split()) for _ in range(int(input().split()[0]))], dtype=int)
+print(*(f for f in [np.mean(a1, axis=1), np.var(a1, axis=0), round(np.std(a1, axis=None), 11)]), sep='\n')
